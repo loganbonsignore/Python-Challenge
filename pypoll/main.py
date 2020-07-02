@@ -11,7 +11,7 @@ import os
 import csv
 from operator import itemgetter
 
-input_path = os.path.join("..","resources","election_data.csv")
+input_path = os.path.join("resources","election_data.csv")
 
 vote_count = 0
 candidates = []
@@ -63,7 +63,7 @@ O'Tooley: {otooley_pct}% ({Otooley_votes})
 Winner: {winner}
 -----------------------------------""")
 
-output_path = os.path.join("output.csv")
+output_path = os.path.join("analysis","output.csv")
 
 with open(output_path, "w") as output_file:
     #convert to csv writer

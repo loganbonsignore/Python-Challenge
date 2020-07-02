@@ -10,7 +10,7 @@
 import os
 import csv
 
-input_path = os.path.join("..","resources","budget_data.csv")
+input_path = os.path.join("resources","budget_data.csv")
 
 num_months = 0
 total_profit = 0
@@ -59,7 +59,7 @@ Greatest Increase in Profits: {greatest_increase_month} ({"${:,.2f}".format(incr
 Greatest Decrease in Profits: {greatest_decrease_month} ({"${:,.2f}".format(decrease_int)})""")
 
 #Export data to new csv
-output_path = os.path.join('output.csv')
+output_path = os.path.join("analysis","output.csv")
 #Create lists to zip together
 column1 = ["Total Months","Total Profit/Loss","Average Profit Change","Greatest Increase in Profits - Month","Greatest Increase in Profits - Number","Greatest Decrease in Profits - Month","Greatest Decrease in Profits - Number"]
 column2 = [num_months, "${:,.2f}".format(total_profit), average_profit, greatest_increase_month, "${:,.2f}".format(increase_int), greatest_decrease_month, "${:,.2f}".format(decrease_int)]
